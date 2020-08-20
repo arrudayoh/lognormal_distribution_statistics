@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_59932c101e8d4b91b9c3da30e4948e28 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_59932c101e8d4b91b9c3da30e4948e28" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_59932c101e8d4b91b9c3da30e4948e28 = L.map(
+                                  'map_59932c101e8d4b91b9c3da30e4948e28',
+                                  {center: [-13.24,-50.66],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_7b320aa842774e2197a12f2f8d34a9b2 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_59932c101e8d4b91b9c3da30e4948e28);
+        
+    
+            var marker_cluster_1edd544a1d0c4e968682ee8e353c7e37 = L.markerClusterGroup({
+                
+            });
+            map_59932c101e8d4b91b9c3da30e4948e28.addLayer(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+            var marker_adf7e0ebdc0f4944b37b6892193728d2 = L.marker(
+                [-20.384533,-43.5035995],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_89474759d1364dcda50af549e0acfb1c = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_adf7e0ebdc0f4944b37b6892193728d2.setIcon(custom_icon_89474759d1364dcda50af549e0acfb1c);
+            
+    
+            var popup_04cdf4819ad44b4fbaf7766b0fd779d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_d511d325c1aa4d50a32740f2c2792fe0 = $('<div id="html_d511d325c1aa4d50a32740f2c2792fe0" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu Mineralogia Prof. Claude Henri Gorceix<br><b>Localização:</b> Praça Tiradentes, 20-Centro. Ouro Preto, MG<br><b>Contato:</b> museu.em@ufop.edu.br<br><b>Horário:</b> nan<br><b>Site:</b> http://www.museu.em.ufop.br/museu/mineralogia.php<br></div>')[0];
+                popup_04cdf4819ad44b4fbaf7766b0fd779d2.setContent(html_d511d325c1aa4d50a32740f2c2792fe0);
+            
+
+            marker_adf7e0ebdc0f4944b37b6892193728d2.bindPopup(popup_04cdf4819ad44b4fbaf7766b0fd779d2);
+
+            
+        
+    
+
+            var marker_81ddc49f0aca4f588971a7724f06140a = L.marker(
+                [-19.931659,-43.938829],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_42a6c0a8ea8e4a02b4df719f90dacc3b = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_81ddc49f0aca4f588971a7724f06140a.setIcon(custom_icon_42a6c0a8ea8e4a02b4df719f90dacc3b);
+            
+    
+            var popup_90dfbaac41de43fb87c01c2aa4734638 = L.popup({maxWidth: '300'});
+
+            
+                var html_ea0b6e628dbc43d68a777f7e407e09df = $('<div id="html_ea0b6e628dbc43d68a777f7e407e09df" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> MM Gerdau Museu das Minas e do Metal<br><b>Localização:</b> Praça da Liberdade, s/n. Prédio Rosa. Belo Horizonte/MG<br><b>Contato:</b> (31) 3516-7200<br><b>Horário:</b> Ter-Dom 12:00 as 18:00/ Qui 12:00 as 22:00<br><b>Site:</b> http://www.mmgerdau.org.br<br></div>')[0];
+                popup_90dfbaac41de43fb87c01c2aa4734638.setContent(html_ea0b6e628dbc43d68a777f7e407e09df);
+            
+
+            marker_81ddc49f0aca4f588971a7724f06140a.bindPopup(popup_90dfbaac41de43fb87c01c2aa4734638);
+
+            
+        
+    
+
+            var marker_0e876a53975849e7ba116ddd18275797 = L.marker(
+                [-23.562091,-46.727408],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_508e327827ba4ecdbe0ed68d4d2e6148 = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_0e876a53975849e7ba116ddd18275797.setIcon(custom_icon_508e327827ba4ecdbe0ed68d4d2e6148);
+            
+    
+            var popup_1a193c6dc099489a9b7cdc6beb03da38 = L.popup({maxWidth: '300'});
+
+            
+                var html_c669dd2adff848c9afcea0ef68efb57b = $('<div id="html_c669dd2adff848c9afcea0ef68efb57b" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu de Geociências - IGC - USP<br><b>Localização:</b> Rua do Lago, 562 – 1º andar, Cidade Universitária, São Paulo<br><b>Contato:</b> (11) 3091-3952<br><b>Horário:</b> Seg-Sex 8:00 as 17:00<br><b>Site:</b> http://www.igc.usp.br/index.php?id=museu<br></div>')[0];
+                popup_1a193c6dc099489a9b7cdc6beb03da38.setContent(html_c669dd2adff848c9afcea0ef68efb57b);
+            
+
+            marker_0e876a53975849e7ba116ddd18275797.bindPopup(popup_1a193c6dc099489a9b7cdc6beb03da38);
+
+            
+        
+    
+
+            var marker_ea5380a52d6e45e5ba0ccd398327d9cb = L.marker(
+                [-22.390695,-47.544206],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_d456784bd7094fe1a22a4483ad52ce59 = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_ea5380a52d6e45e5ba0ccd398327d9cb.setIcon(custom_icon_d456784bd7094fe1a22a4483ad52ce59);
+            
+    
+            var popup_1cb04195d2c14603aa2f34c0795fc64b = L.popup({maxWidth: '300'});
+
+            
+                var html_353e337cfa5246fcba94a68972d6d588 = $('<div id="html_353e337cfa5246fcba94a68972d6d588" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu de Minerais e Rochas Heinz Ebert - UNESP <br><b>Localização:</b> Departamento de Petrologia e Metalogenia (DPM) da Unesp, no município de Rio Claro (SP)<br><b>Contato:</b> via website<br><b>Horário:</b> Seg-Sex 08:00-17:00 *necessário agendar<br><b>Site:</b> https://museuhe.com.br<br></div>')[0];
+                popup_1cb04195d2c14603aa2f34c0795fc64b.setContent(html_353e337cfa5246fcba94a68972d6d588);
+            
+
+            marker_ea5380a52d6e45e5ba0ccd398327d9cb.bindPopup(popup_1cb04195d2c14603aa2f34c0795fc64b);
+
+            
+        
+    
+
+            var marker_26535dee21b24444ba0a197b498a1470 = L.marker(
+                [-22.954015,-43.170316],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_cba0b29322494ab08d6a12481f31fe77 = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_26535dee21b24444ba0a197b498a1470.setIcon(custom_icon_cba0b29322494ab08d6a12481f31fe77);
+            
+    
+            var popup_c9c8cd844ffa435eae446ee4ee1af2af = L.popup({maxWidth: '300'});
+
+            
+                var html_b5b0acdbb6054ca4ac474a6a5251633f = $('<div id="html_b5b0acdbb6054ca4ac474a6a5251633f" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu de Ciências de Terra - DNPM <br><b>Localização:</b> Av. Pasteur, 404 - Urca | Rio de Janeiro/RJ <br><b>Contato:</b> educamcter@cprm.gov.br <br><b>Horário:</b> Ter-Dom 10:00 as 16:00<br><b>Site:</b> http://www.cprm.gov.br/publique/Sobre-a-CPRM/Nossos-Museus/Museu-de-Ciencias-da-Terra---MCTer-180<br></div>')[0];
+                popup_c9c8cd844ffa435eae446ee4ee1af2af.setContent(html_b5b0acdbb6054ca4ac474a6a5251633f);
+            
+
+            marker_26535dee21b24444ba0a197b498a1470.bindPopup(popup_c9c8cd844ffa435eae446ee4ee1af2af);
+
+            
+        
+    
+
+            var marker_76d1011e7a92430a8e0698d33c4ac288 = L.marker(
+                [-23.529683,-46.668068],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_ca4d6c5753ee43c9ab4deed0279829a4 = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_76d1011e7a92430a8e0698d33c4ac288.setIcon(custom_icon_ca4d6c5753ee43c9ab4deed0279829a4);
+            
+    
+            var popup_7c4deb31904b43c8a0e72b1898718d9b = L.popup({maxWidth: '300'});
+
+            
+                var html_9235c1dc1f2d47fca2adb9c741d6493a = $('<div id="html_9235c1dc1f2d47fca2adb9c741d6493a" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu Geológico Valdemar Lefèvre - SP<br><b>Localização:</b> Av. Francisco Matarazzo, nº 455, Perdizes - São Paulo - SP<br><b>Contato:</b> ig.mugeo@sp.gov.br<br><b>Horário:</b> Ter-Dom 09:00 as 17:00<br><b>Site:</b> http://mugeo.sp.gov.br<br></div>')[0];
+                popup_7c4deb31904b43c8a0e72b1898718d9b.setContent(html_9235c1dc1f2d47fca2adb9c741d6493a);
+            
+
+            marker_76d1011e7a92430a8e0698d33c4ac288.bindPopup(popup_7c4deb31904b43c8a0e72b1898718d9b);
+
+            
+        
+    
+
+            var marker_506cf0a1727140298dc7e4d668287b22 = L.marker(
+                [-30.071968,-51.227454],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_2122f639c0294a1db7b008ed00cafa84 = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_506cf0a1727140298dc7e4d668287b22.setIcon(custom_icon_2122f639c0294a1db7b008ed00cafa84);
+            
+    
+            var popup_de220fab286c4d73916bef4f863f70c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_3517e69e5ecc4b73bebc626a29df6395 = $('<div id="html_3517e69e5ecc4b73bebc626a29df6395" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu de Geologia CPRM <br><b>Localização:</b> Rua Banco da Província, 105 - Santa Teresa | Porto Alegre/RS<br><b>Contato:</b> museugeo@cprm.gov.br<br><b>Horário:</b> apenas com agendamento<br><b>Site:</b> http://www.cprm.gov.br/publique/Sobre-a-CPRM/Nossos-Museus/Museu-de-Geologia-179<br></div>')[0];
+                popup_de220fab286c4d73916bef4f863f70c7.setContent(html_3517e69e5ecc4b73bebc626a29df6395);
+            
+
+            marker_506cf0a1727140298dc7e4d668287b22.bindPopup(popup_de220fab286c4d73916bef4f863f70c7);
+
+            
+        
+    
+
+            var marker_52efa7fa19844eccb4d2ac04264f6c31 = L.marker(
+                [-21.25896,-48.49925],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_24ac93fbde4845ddaccd54fef5f7f25e = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_52efa7fa19844eccb4d2ac04264f6c31.setIcon(custom_icon_24ac93fbde4845ddaccd54fef5f7f25e);
+            
+    
+            var popup_23d532ced9e8463b90fbd317151b63e6 = L.popup({maxWidth: '300'});
+
+            
+                var html_941e9e2c332345cda058ecf194df5c3d = $('<div id="html_941e9e2c332345cda058ecf194df5c3d" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu de Paleontologia de Monte Alto<br><b>Localização:</b> Praça do Centenário, S/N-Monte Alto|SP<br><b>Contato:</b> mpaleo@montealto.sp.gov.br<br><b>Horário:</b> nan<br><b>Site:</b> https://www.facebook.com/pg/Museu-de-Paleontologia-de-Monte-Alto-1283860661711256/about/?ref=page_internal<br></div>')[0];
+                popup_23d532ced9e8463b90fbd317151b63e6.setContent(html_941e9e2c332345cda058ecf194df5c3d);
+            
+
+            marker_52efa7fa19844eccb4d2ac04264f6c31.bindPopup(popup_23d532ced9e8463b90fbd317151b63e6);
+
+            
+        
+    
+
+            var marker_2f9420d6410340e1b2dc2e61b81c0ef7 = L.marker(
+                [-7.186179,-39.736244],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_7d805e54827c40b0ad05cbec1876210b = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_2f9420d6410340e1b2dc2e61b81c0ef7.setIcon(custom_icon_7d805e54827c40b0ad05cbec1876210b);
+            
+    
+            var popup_410d006f28a34d36a10202ba86586c73 = L.popup({maxWidth: '300'});
+
+            
+                var html_85b0e2819acc4cf4a684e859f0039528 = $('<div id="html_85b0e2819acc4cf4a684e859f0039528" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu de Paleontologia Plácido Cidade Nuvens<br><b>Localização:</b> R. Dr Plácido Cidade Nuvens, 326, Santana do Cariri - CE<br><b>Contato:</b> museu.paleontologia@urca.br <br><b>Horário:</b> Ter-Dom 09:00 as 16:00<br><b>Site:</b> https://www.museudepaleontologiaplacidocidadenuvens.com<br></div>')[0];
+                popup_410d006f28a34d36a10202ba86586c73.setContent(html_85b0e2819acc4cf4a684e859f0039528);
+            
+
+            marker_2f9420d6410340e1b2dc2e61b81c0ef7.bindPopup(popup_410d006f28a34d36a10202ba86586c73);
+
+            
+        
+    
+
+            var marker_b2d4204164cd40a0903d7bbfea883fa6 = L.marker(
+                [-12.992493,-38.525465],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_77821e3a3c6948afb53b5f0b66cadefa = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_b2d4204164cd40a0903d7bbfea883fa6.setIcon(custom_icon_77821e3a3c6948afb53b5f0b66cadefa);
+            
+    
+            var popup_7915db3b70cd4da6a9f3aadfc4cf3361 = L.popup({maxWidth: '300'});
+
+            
+                var html_f4c5b994e3464f4888ef5978a7a33e2c = $('<div id="html_f4c5b994e3464f4888ef5978a7a33e2c" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu Geológico da Bahia<br><b>Localização:</b> Avenida Sete de Setembro 2195, Corredor da Vitória. CEP 40080-002 Salvador, BA<br><b>Contato:</b> mgb@sde.ba.gov.br<br><b>Horário:</b> Ter-Sex 13:00 as 18:00 e Sab-Dom 13:00 as 17:00<br><b>Site:</b> http://www.mgb.ba.gov.br<br></div>')[0];
+                popup_7915db3b70cd4da6a9f3aadfc4cf3361.setContent(html_f4c5b994e3464f4888ef5978a7a33e2c);
+            
+
+            marker_b2d4204164cd40a0903d7bbfea883fa6.bindPopup(popup_7915db3b70cd4da6a9f3aadfc4cf3361);
+
+            
+        
+    
+
+            var marker_197e3eae2e5f41c199acf1be3011bdc1 = L.marker(
+                [-22.857379,-43.23239],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_3854e05557f946f8bb06c17324049d41 = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_197e3eae2e5f41c199acf1be3011bdc1.setIcon(custom_icon_3854e05557f946f8bb06c17324049d41);
+            
+    
+            var popup_f51d131d044949828a62367fc068267d = L.popup({maxWidth: '300'});
+
+            
+                var html_b4f5e2864ec8479eac44ef69bdb7b877 = $('<div id="html_b4f5e2864ec8479eac44ef69bdb7b877" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu da Geodiversidade<br><b>Localização:</b> Avenida Athos da Silveira Ramos, 274 - Ilha do Fundão, Rio de Janeiro - RJ<br><b>Contato:</b> mgeo@ufrj.br<br><b>Horário:</b> Seg-Sex 9:00 as 19:00<br><b>Site:</b> http://www.museu.igeo.ufrj.br/<br></div>')[0];
+                popup_f51d131d044949828a62367fc068267d.setContent(html_b4f5e2864ec8479eac44ef69bdb7b877);
+            
+
+            marker_197e3eae2e5f41c199acf1be3011bdc1.bindPopup(popup_f51d131d044949828a62367fc068267d);
+
+            
+        
+    
+
+            var marker_5ba4edfcb45e44518b1efe52a1a14412 = L.marker(
+                [-30.07624,-51.123116],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_d2fc850a003e45d7bb005547dcb38aeb = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_5ba4edfcb45e44518b1efe52a1a14412.setIcon(custom_icon_d2fc850a003e45d7bb005547dcb38aeb);
+            
+    
+            var popup_fa5a44131b9f4fa0a1e7797b94332d68 = L.popup({maxWidth: '300'});
+
+            
+                var html_93fab09c199f43db919b8dda18d8b20a = $('<div id="html_93fab09c199f43db919b8dda18d8b20a" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu de Mineralogia UFRGS<br><b>Localização:</b> Campus do Vale da UFRGS<br><b>Contato:</b> (51)3308-6329 <br><b>Horário:</b> nan<br><b>Site:</b> http://www.ufrgs.br/museumin/porsite.htm<br></div>')[0];
+                popup_fa5a44131b9f4fa0a1e7797b94332d68.setContent(html_93fab09c199f43db919b8dda18d8b20a);
+            
+
+            marker_5ba4edfcb45e44518b1efe52a1a14412.bindPopup(popup_fa5a44131b9f4fa0a1e7797b94332d68);
+
+            
+        
+    
+
+            var marker_dbd599c1da74480093e1f1317d4474ec = L.marker(
+                [-15.763719,-47.869076],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_c3d996276da04de49b888c58d5647dd7 = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_dbd599c1da74480093e1f1317d4474ec.setIcon(custom_icon_c3d996276da04de49b888c58d5647dd7);
+            
+    
+            var popup_c8d03297ba944ea7b41233ec50dc7087 = L.popup({maxWidth: '300'});
+
+            
+                var html_59f6e47f0d8e40f783d30338098e8802 = $('<div id="html_59f6e47f0d8e40f783d30338098e8802" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu de Geociências da UnB<br><b>Localização:</b> Instituto de Geociências Universidade de Brasília Campus Universitário Darcy Ribeiro<br><b>Contato:</b> geomuseu@unb.br<br><b>Horário:</b> nan<br><b>Site:</b> http://mw.eco.br/ig/exte/museu/index.htm<br></div>')[0];
+                popup_c8d03297ba944ea7b41233ec50dc7087.setContent(html_59f6e47f0d8e40f783d30338098e8802);
+            
+
+            marker_dbd599c1da74480093e1f1317d4474ec.bindPopup(popup_c8d03297ba944ea7b41233ec50dc7087);
+
+            
+        
+    
+
+            var marker_00bd4912acd24a46b4ecc2cd7cc5d71a = L.marker(
+                [-19.754896,-47.931284],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_0678b0915db94ad99bd4a5f3e8a3317f = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_00bd4912acd24a46b4ecc2cd7cc5d71a.setIcon(custom_icon_0678b0915db94ad99bd4a5f3e8a3317f);
+            
+    
+            var popup_1682efb095bd4942b8bfa06d9b18a603 = L.popup({maxWidth: '300'});
+
+            
+                var html_4cfe0babd2514ca5923c697ec2932bb8 = $('<div id="html_4cfe0babd2514ca5923c697ec2932bb8" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu dos Dinossauros<br><b>Localização:</b> Av. Frei Paulino, nº 30 - Bairro Abadia  - Uberaba - MG<br><b>Contato:</b> cccp@uftm.edu.br<br><b>Horário:</b> Ter-Sex 8:00 as 17:00<br><b>Site:</b> http://www.uftm.edu.br/proext/cccp/museu-dos-dinossauros<br></div>')[0];
+                popup_1682efb095bd4942b8bfa06d9b18a603.setContent(html_4cfe0babd2514ca5923c697ec2932bb8);
+            
+
+            marker_00bd4912acd24a46b4ecc2cd7cc5d71a.bindPopup(popup_1682efb095bd4942b8bfa06d9b18a603);
+
+            
+        
+    
+
+            var marker_633c44ba1e144eb0ac2cbaa673e86e7e = L.marker(
+                [-5.803281,-35.201838],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_e038165e1db1408481dcb00c123b87cd = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_633c44ba1e144eb0ac2cbaa673e86e7e.setIcon(custom_icon_e038165e1db1408481dcb00c123b87cd);
+            
+    
+            var popup_1b2d4a376ca346aa8ec02f34c93566ce = L.popup({maxWidth: '300'});
+
+            
+                var html_fb4d48585a0e4c0bbf7034d558bfaf47 = $('<div id="html_fb4d48585a0e4c0bbf7034d558bfaf47" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu Câmara Cascudo/UFRN<br><b>Localização:</b> Av. Hermes da Fonseca, 1398 – Tirol, Natal/RN<br><b>Contato:</b> nan<br><b>Horário:</b> Ter-Dom 08:30 as 18:00<br><b>Site:</b> https://www.facebook.com/mccufrn/<br></div>')[0];
+                popup_1b2d4a376ca346aa8ec02f34c93566ce.setContent(html_fb4d48585a0e4c0bbf7034d558bfaf47);
+            
+
+            marker_633c44ba1e144eb0ac2cbaa673e86e7e.bindPopup(popup_1b2d4a376ca346aa8ec02f34c93566ce);
+
+            
+        
+    
+
+            var marker_d236b0d541a548c4b7c83c6397348533 = L.marker(
+                [-6.732311,-38.261886],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_24994aff994943d1a1f31e9c74fc0b08 = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d236b0d541a548c4b7c83c6397348533.setIcon(custom_icon_24994aff994943d1a1f31e9c74fc0b08);
+            
+    
+            var popup_b003ff1c1bb64f3a8722422175718d7d = L.popup({maxWidth: '300'});
+
+            
+                var html_8bfd4e03a7fa488d9c0bad46b0a73287 = $('<div id="html_8bfd4e03a7fa488d9c0bad46b0a73287" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Vale dos Dinossauros<br><b>Localização:</b> Rodovia PB391, S/n - Uirauna, Sousa - PB<br><b>Contato:</b>  (83) 98811-3265<br><b>Horário:</b> Ter-Dom 8:00 as 17:00<br><b>Site:</b> https://www.tripadvisor.com.br/Attraction_Review-g2344212-d2342343-Reviews-Valley_of_the_Dinosaurs-Sousa_State_of_Paraiba.html<br></div>')[0];
+                popup_b003ff1c1bb64f3a8722422175718d7d.setContent(html_8bfd4e03a7fa488d9c0bad46b0a73287);
+            
+
+            marker_d236b0d541a548c4b7c83c6397348533.bindPopup(popup_b003ff1c1bb64f3a8722422175718d7d);
+
+            
+        
+    
+
+            var marker_d607cc94ab19404aae3562e2df8e7fa0 = L.marker(
+                [-30.057981,-51.176091],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_118712bfd8ef4af6a0baced2bae7027e = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d607cc94ab19404aae3562e2df8e7fa0.setIcon(custom_icon_118712bfd8ef4af6a0baced2bae7027e);
+            
+    
+            var popup_ce912b41c61646c8a0de621c04612c54 = L.popup({maxWidth: '300'});
+
+            
+                var html_5156e6131c284b6493adfa9df2a075d5 = $('<div id="html_5156e6131c284b6493adfa9df2a075d5" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu de Ciências e Tecnologia PUCRS<br><b>Localização:</b> Av. Ipiranga, 6.681 – Prédio 40 Partenon - Porto Alegre/RS<br><b>Contato:</b> mct@pucrs.br<br><b>Horário:</b> Ter-Sex 9:00 as 17:00 & Sab-Dom 10:00 as 18:00<br><b>Site:</b> http://www.pucrs.br/mct/colecoes/paleontologia/<br></div>')[0];
+                popup_ce912b41c61646c8a0de621c04612c54.setContent(html_5156e6131c284b6493adfa9df2a075d5);
+            
+
+            marker_d607cc94ab19404aae3562e2df8e7fa0.bindPopup(popup_ce912b41c61646c8a0de621c04612c54);
+
+            
+        
+    
+
+            var marker_a513c284a9ec43c7a44fea0775565840 = L.marker(
+                [-1.453345,-48.476539],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_6044a93912f24d11a751d2a629c82742 = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_a513c284a9ec43c7a44fea0775565840.setIcon(custom_icon_6044a93912f24d11a751d2a629c82742);
+            
+    
+            var popup_4a739f8226d84073a9465ff67e1df0f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_33e27b66be2e46e9b875846a531d51b4 = $('<div id="html_33e27b66be2e46e9b875846a531d51b4" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu Paraense Emílio Goeldi<br><b>Localização:</b> Av. Magalhães Barata, 376 - São Braz - Belém - PA<br><b>Contato:</b> nuvop@museu-goeldi.br<br><b>Horário:</b> Qua-Dom 9:00 as 15:00<br><b>Site:</b> https://www.museu-goeldi.br<br></div>')[0];
+                popup_4a739f8226d84073a9465ff67e1df0f5.setContent(html_33e27b66be2e46e9b875846a531d51b4);
+            
+
+            marker_a513c284a9ec43c7a44fea0775565840.bindPopup(popup_4a739f8226d84073a9465ff67e1df0f5);
+
+            
+        
+    
+
+            var marker_63d83b0d166148d787ba88be1b44a201 = L.marker(
+                [-25.096477,-50.158658],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_8bbaca419c3d438fa1767f4288c3ee1d = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_63d83b0d166148d787ba88be1b44a201.setIcon(custom_icon_8bbaca419c3d438fa1767f4288c3ee1d);
+            
+    
+            var popup_ae9212827ef04e1dac7e8d86b15a45ef = L.popup({maxWidth: '300'});
+
+            
+                var html_1910aeed265b4a348c8fcca972fc9bc4 = $('<div id="html_1910aeed265b4a348c8fcca972fc9bc4" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu Campos Gerais<br><b>Localização:</b> Rua Engenheiro Schamber, n.º686, Ponta Grossa – PR<br><b>Contato:</b> museucamposgerais@uepg.br<br><b>Horário:</b> Ter-Sex 8:00 as 17:00 & Sab 9:00 as 17:00<br><b>Site:</b> http://www.pitangui.uepg.br/museu/acervo.php<br></div>')[0];
+                popup_ae9212827ef04e1dac7e8d86b15a45ef.setContent(html_1910aeed265b4a348c8fcca972fc9bc4);
+            
+
+            marker_63d83b0d166148d787ba88be1b44a201.bindPopup(popup_ae9212827ef04e1dac7e8d86b15a45ef);
+
+            
+        
+    
+
+            var marker_8afee6e453fd40b98a00cc386bcede81 = L.marker(
+                [-19.921993,-43.989777],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_efe4d828a27a45dc8a38356a6af2278b = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_8afee6e453fd40b98a00cc386bcede81.setIcon(custom_icon_efe4d828a27a45dc8a38356a6af2278b);
+            
+    
+            var popup_592fd9b4edd747959f38cc8039ec996c = L.popup({maxWidth: '300'});
+
+            
+                var html_421e7e105fe44983ac3b8990db34e69b = $('<div id="html_421e7e105fe44983ac3b8990db34e69b" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Museu Ciências Naturais PUCMG<br><b>Localização:</b> Avenida Dom José Gaspar, 290. Coração Eucarístico, Belo Horizonte, MG<br><b>Contato:</b>  museu@pucminas.br<br><b>Horário:</b> Ter-Sab 9:00 as 17:00<br><b>Site:</b> http://portal.pucminas.br/museu_novo/destaques.php<br></div>')[0];
+                popup_592fd9b4edd747959f38cc8039ec996c.setContent(html_421e7e105fe44983ac3b8990db34e69b);
+            
+
+            marker_8afee6e453fd40b98a00cc386bcede81.bindPopup(popup_592fd9b4edd747959f38cc8039ec996c);
+
+            
+        
+    
+
+            var marker_d1f3a1c7ee9a4764bdc2884bb3cfca61 = L.marker(
+                [-26.133049,-49.809565],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_1edd544a1d0c4e968682ee8e353c7e37);
+            
+    
+
+                var custom_icon_bf8e6cd9f63940169c272c0b5db6f005 = L.icon({
+                    iconUrl: 'https://www.freeiconspng.com/uploads/museum-icon-9.png',
+                    iconSize: [60,60],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d1f3a1c7ee9a4764bdc2884bb3cfca61.setIcon(custom_icon_bf8e6cd9f63940169c272c0b5db6f005);
+            
+    
+            var popup_e0e02a3e514d4f44ae286a87222dd2c2 = L.popup({maxWidth: '300'});
+
+            
+                var html_7efddc978fe04755b9dbd9656763204e = $('<div id="html_7efddc978fe04755b9dbd9656763204e" style="width: 100.0%; height: 100.0%;"><b>Museu:</b> Centro paleontológico de Mafra (CENPALEO)<br><b>Localização:</b> Bloco "E" da UNC, Av. Pres. Nereu Ramos, 1071, Jardim do Moinho. , Mafra - SC<br><b>Contato:</b> (47) 3641-5514<br><b>Horário:</b> nan<br><b>Site:</b> https://www.unc.br/cenpaleo2013/<br></div>')[0];
+                popup_e0e02a3e514d4f44ae286a87222dd2c2.setContent(html_7efddc978fe04755b9dbd9656763204e);
+            
+
+            marker_d1f3a1c7ee9a4764bdc2884bb3cfca61.bindPopup(popup_e0e02a3e514d4f44ae286a87222dd2c2);
+
+            
+        
+</script>
