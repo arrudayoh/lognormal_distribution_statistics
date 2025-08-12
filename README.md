@@ -1,4 +1,4 @@
-Lognormal distribution tool for geocientists to get distributions and other parametersa from the distributions
+Lognormal distribution tool for geocientists to get distributions and other parameters
 
 <img width="760" height="553" alt="Captura de tela 2025-08-12 140435" src="https://github.com/user-attachments/assets/a23c8856-bfa2-4047-8c3c-e70a84a456ad" />
 
